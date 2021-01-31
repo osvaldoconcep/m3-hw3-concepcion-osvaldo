@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgWxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+#header {
+  background-color: #f7e020;
+}
+#header ul {
+  list-style-type: none;
+  padding: 3rem 6rem;
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+}
+@media (max-width: 800px) {
+  #header ul {
+    padding: 1.5rem 3rem;
+  }
+}
+#header ul li {
+  float: left;
+  padding-right: 2rem;
+}
+@media (max-width: 500px) {
+  #header ul li {
+    padding-right: 0.5rem;
+  }
+}
+#banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../img/banner-bg.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 400px;
+  width: auto;
+}
+#banner #banner-logo {
+  width: 350px;
+}
+#banner #banner-button-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#banner #banner-button-container #banner-button {
+  background-color: #f7e020;
+  color: #070802;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+#midSection {
+  padding: 3rem 6rem;
+  margin: 0;
+  display: flex;
+}
+@media (max-width: 800px) {
+  #midSection {
+    padding: 1.5rem 3rem;
+  }
+}
+#midSection #midSectionLeft {
+  max-width: 800px;
+}
+#midSection #midSectionLeft #viewMenuButton {
+  background-color: #f7e020;
+  color: #070802;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+#midSection #midSectionRight {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  #midSection #midSectionRight {
+    display: none;
+  }
+}
+#midSection #midSectionRight #burgerImage {
+  width: 200px;
+}
+#bottomSection {
+  padding: 3rem 6rem;
+  margin: 0;
+  display: flex;
+}
+@media (max-width: 800px) {
+  #bottomSection {
+    padding: 1.5rem 3rem;
+  }
+}
+#bottomSection #bottomSectionLeft {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  #bottomSection #bottomSectionLeft {
+    display: none;
+  }
+}
+#bottomSection #bottomSectionLeft #bobsHeadshot {
+  width: 150px;
+}
+#bottomSection #bottomSectionRight {
+  max-width: 800px;
+}
+#bottomSection #bottomSectionRight #contactUsButton {
+  background-color: #f7e020;
+  color: #070802;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #070802;
+  border-top: #f7e020 10px solid;
+  padding: 24px;
+}
+footer #footerImage {
+  width: 300px;
+}
+@media (max-width: 500px) {
+  footer #footerImage {
+    width: 150px;
+  }
+}
+.highlight {
+  color: #ed252f;
+}
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+/*# sourceMappingURL=main.css.map */

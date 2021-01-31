@@ -1,0 +1,105 @@
+@import "mixins";
+
+body {
+  @bobs-font();
+}
+
+#header {
+  background-color: @bobs-yellow;
+  ul {
+    list-style-type: none;
+    @container();
+    overflow: hidden;
+    li {
+      float: left;
+      padding-right: 2rem;
+      @media (max-width: 500px) {
+        padding-right: 0.5rem;
+      }
+    }
+  }
+}
+
+#banner {
+  @center-align();
+  background: url('../img/banner-bg.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 400px;
+  width: auto;
+
+  #banner-logo {
+    width: 350px;
+  }
+  #banner-button-container {
+    padding: 1rem;
+    @center-align();
+    #banner-button {
+      @bobs-button();
+    }
+  }
+}
+
+#midSection {
+  @container();
+  #midSectionLeft {
+    @content-area();
+    #viewMenuButton {
+      @bobs-button();
+    }
+  }
+  #midSectionRight {
+    @hide-on-small-screen();
+    @image-area();
+    #burgerImage {
+      width: 200px;
+    }
+  }
+}
+
+#bottomSection {
+  @container();
+  #bottomSectionLeft {
+    @hide-on-small-screen();
+    @image-area();
+    #bobsHeadshot {
+      width: 150px;
+    }
+  }
+  #bottomSectionRight {
+    @content-area();
+    #contactUsButton {
+      @bobs-button();
+    }
+  }
+}
+
+footer {
+  @center-align();
+  background-color: @bobs-black;
+  border-top: @bobs-yellow 10px solid;
+  padding: 24px;
+  #footerImage {
+    width: 300px;
+    @media (max-width: 500px) {
+      width: 150px;
+    }
+  }
+}
+
+.highlight {
+  color: @bobs-red;
+}
+
+.sr-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+

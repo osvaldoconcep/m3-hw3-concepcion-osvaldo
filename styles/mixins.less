@@ -1,0 +1,43 @@
+@import "variables";
+
+@container: {
+  padding: 3rem 6rem;
+  margin: 0;
+  display: flex;
+  @media (max-width: 800px) {
+    padding: 1.5rem 3rem;
+  }
+}
+
+@center-align: {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@bobs-button: {
+  background-color: @bobs-yellow;
+  color: @bobs-black;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+@content-area: {
+  max-width: 800px;
+}
+
+@image-area: {
+  width: 100%;
+  padding: 1rem;
+  @center-align();
+}
+
+@hide-on-small-screen: {
+  @media (max-width: 800px) {
+    display: none;
+  }
+}

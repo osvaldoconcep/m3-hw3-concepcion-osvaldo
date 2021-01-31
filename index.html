@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/main.css">
     <title></title>
     <meta name="description" content="">
   </head>
   <body>
 
-    <header>
+    <header id="header">
       <nav>
         <ul>
           <li>Home</li>
           <li>Menu</li>
           <li>About Us</li>
-          <li>Order Now</li>
+          <li class="highlight">ORDER NOW</li>
         </ul>
       </nav>
     </header>
@@ -25,41 +25,52 @@
     <main>
 
       <!-- Banner -->
-      <div>
-        <img src="img/banner-bg.png" alt="Bob's Burger" title="Bob's Burger"/>
-        <img src="img/logo.png" alt="Bob's Burger Logo" title="Bob's Burger title">
-        <h1>Bob's Burgers</h1>
-        <button>Order Now</button>
+      <div id="banner">
+        <div>
+          <h1 class="sr-only">Bob's Burgers</h1>
+          <div >
+            <img id="banner-logo" src="img/logo.png" alt="Bob's Burger Logo" title="Bob's Burger title">
+          </div>
+          <div id="banner-button-container">
+            <div id="banner-button">
+              ORDER NOW
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Mid section -->
-      <div>
-        <div>
-          <h2>World's Best Burgers</h2>
+      <div id="midSection">
+        <div id="midSectionLeft">
+          <h2>WORLD'S BEST BURGERS</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-          <button>View Menu</button>
+          <div id="viewMenuButton">
+            VIEW MENU
+          </div>
         </div>
-        <div>
-          <img src="img/bobs-burger.png" alt="Burger" title="Burger">
+        <div id="midSectionRight">
+          <img id="burgerImage" src="img/bobs-burger.png" alt="Burger" title="Burger">
         </div>
       </div>
 
       <!-- Bottom section -->
-      <div>
-        <div>
-          <img src="img/bob-headshot.png" alt="Bob" title="Bob">
+      <div id="bottomSection">
+        <div id="bottomSectionLeft">
+          <img id="bobsHeadshot" src="img/bob-headshot.png" alt="Bob" title="Bob">
         </div>
-        <div>
-          <h2>Dine-in or Take-out</h2>
+        <div id="bottomSectionRight">
+          <h2>DINE-IN or <span class="highlight">TAKE-OUT</span></h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-          <button>Contact Us</button>
+          <div id="contactUsButton">
+            CONTACT US
+          </div>
         </div>
       </div>
     </main>
 
     <!-- Footer -->
     <footer>
-      <img src="img/logo.png" alt="Bob's Burger Logo" title="Bob's Burger title">
+      <img id="footerImage" src="img/logo.png" alt="Bob's Burger Logo" title="Bob's Burger title">
     </footer>
 
     <!-- Bootstrap Bundle with Popper -->
